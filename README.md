@@ -1,2 +1,2 @@
-# Sorting-Algorithm
-This is my Sorting-Algorithm,  inspired by Clement. 
+# MyAnimeList
+This is my version of MAL. This is MyAnimeList!!!
