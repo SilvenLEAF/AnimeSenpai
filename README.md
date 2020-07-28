@@ -1,2 +1,2 @@
-# MyAnimeList
-This is my version of MAL. This is MyAnimeList!!!
+# AnimeSenpai
+An App for anime fans to check out airing anime, aired anime and many many many more!!!
