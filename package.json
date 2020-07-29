@@ -1,0 +1,25 @@
+{
+  "name": "animesenpai",
+  "version": "1.0.0",
+  "description": "An app for all anime fans",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilvenLEAF/AnimeSenpai.git"
+  },
+  "keywords": [
+    "Anime"
+  ],
+  "author": "SilvenLEAF",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SilvenLEAF/AnimeSenpai/issues"
+  },
+  "homepage": "https://github.com/SilvenLEAF/AnimeSenpai#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
