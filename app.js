@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_STRING, {
 .             middlewares 
 ---------------------------------- */
 // ---------routes handling
-
+app.use(require('./routes/authRoutes'))
 
 
 
