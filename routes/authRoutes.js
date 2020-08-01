@@ -2,6 +2,7 @@ const router = require('express').Router();
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const auth = require('../middleware/auth');
 
 
 
@@ -110,6 +111,58 @@ router.post('/login', async (req, res, next)=>{
   }
 })
 
+
+
+
+
+
+
+/* ------------------------------------------------
+.              TOKEN VERIFYING ROUTE
+------------------------------------------------ */
+router.post('/verifyToken', async (req, res, next) =>{
+  try {
+    const token = req.header('x-auth-token');
+
+    // if there is no token
+    if(!token)
+      return res.json(false)
+
+    // if there is a token, then verify it
+    const verified = jwt.verify(token, process.env.JWT_SECRET);
+    
+    if(!verified)
+      return res.json(false);
+
+    // is the user on the database
+    const user = await User.findById(verified.id);
+
+    if(!user)
+      return res.json(false);
+
+    // ----------------------default
+    return res.json(true);
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+
+
+
+
+
+
+/* ------------------------------------------------
+.             GET LOGGED IN USER ROUTE
+------------------------------------------------ */
+router.get('/loggedInUser', auth, async (req, res, next)=>{
+  const user = await User.findById(req.user);
+  res.json({
+    displayName: user.displayName,
+    id: user._id
+  })
+})
 
 
 
