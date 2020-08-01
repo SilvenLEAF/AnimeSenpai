@@ -1,0 +1,32 @@
+#######################################
+#---------------Search----------------#
+#######################################
+POST http://localhost:5000/anime/search HTTP/1.1
+Content-Type: application/json
+
+{
+  "animeName": "Yao Shen Ji"
+}
+
+
+#######################################
+#---------------Info----------------#
+#######################################
+POST http://localhost:5000/anime/info HTTP/1.1
+Content-Type: application/json
+
+{
+  "animeName": "One Punch Man"
+}
+
+
+#######################################
+#---------------Season----------------#
+#######################################
+POST http://localhost:5000/anime/season HTTP/1.1
+Content-Type: application/json
+
+{
+  "animeYear": 2019,
+  "animeSeason": "fall"
+}

@@ -26,7 +26,8 @@ mongoose.connect(process.env.MONGODB_STRING, {
 ---------------------------------- */
 // ---------routes handling
 app.use(require('./routes/authRoutes'))
-
+app.use('/users', require('./routes/userRoutes'));
+app.use('/anime', require('./routes/animeRoutes'));
 
 
 

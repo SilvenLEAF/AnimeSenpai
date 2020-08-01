@@ -153,16 +153,6 @@ router.post('/verifyToken', async (req, res, next) =>{
 
 
 
-/* ------------------------------------------------
-.             GET LOGGED IN USER ROUTE
------------------------------------------------- */
-router.get('/loggedInUser', auth, async (req, res, next)=>{
-  const user = await User.findById(req.user);
-  res.json({
-    displayName: user.displayName,
-    id: user._id
-  })
-})
 
 
 
