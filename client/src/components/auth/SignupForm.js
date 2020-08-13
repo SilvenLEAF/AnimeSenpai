@@ -26,7 +26,7 @@ function SignupForm() {
     setError(null);
     const newUser = { email, password, passwordCheck, displayName };
       
-    const signupRes = await fetch('http://localhost:5000/signup',{
+    const signupRes = await fetch('/signup',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ function SignupForm() {
     console.log(error)
     console.log(signupData.msg)
 
-    const loginRes = await fetch('http://localhost:5000/login',{
+    const loginRes = await fetch('/login',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

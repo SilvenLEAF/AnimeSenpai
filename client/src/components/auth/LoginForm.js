@@ -21,7 +21,7 @@ function LoginForm() {
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
-    const loginRes = await fetch('http://localhost:5000/login', {
+    const loginRes = await fetch('/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -36,7 +36,7 @@ function UpdateProfile() {
     if(newAbout) newProfileData.about = newAbout;
 
     console.log(newProfileData);
-    const updateRes = await fetch('http://localhost:5000/users/update', {
+    const updateRes = await fetch('/users/update', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

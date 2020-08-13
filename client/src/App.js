@@ -35,7 +35,7 @@ function App() {
         token = "";
       }
       // if there is a token key, then verify
-       const verifyTokenRes = await fetch('http://localhost:5000/verifyToken', {
+       const verifyTokenRes = await fetch('/verifyToken', {
         method: 'POST',
         headers: {
           'x-auth-token': token
@@ -46,7 +46,7 @@ function App() {
       const verifyTokenData = await verifyTokenRes.json();
       if(verifyTokenData){
         const loggedinUserRes = await fetch(
-          'http://localhost:5000/users', {
+          '/users', {
           method: 'GET',
           headers: {
               'x-auth-token': token

@@ -18,7 +18,7 @@ function Info(props) {
 
   useEffect(()=>{
     const getAnimeInfo = async()=>{
-      const animeInfoRes = await fetch('http://localhost:5000/anime/info', {
+      const animeInfoRes = await fetch('/anime/info', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

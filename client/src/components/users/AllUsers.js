@@ -17,7 +17,7 @@ function AllUsers() {
   const [allUsers, setAllUsers] = useState();
   useEffect(()=>{
     const getAllUsers = async () =>{
-      const allUsersRes = await fetch('http://localhost:5000/users/all');
+      const allUsersRes = await fetch('/users/all');
   
       const allUsersData = await allUsersRes.json();
       console.log(allUsersData);

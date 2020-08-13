@@ -19,7 +19,7 @@ function Search() {
   const handleSubmit = async (e) =>{
     e.preventDefault();
 
-    const animeInfoRes = await fetch('http://localhost:5000/anime/search', {
+    const animeInfoRes = await fetch('/anime/search', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

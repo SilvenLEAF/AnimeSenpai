@@ -20,7 +20,7 @@ function UserProfile(props) {
 
   useEffect(()=>{
     const getFriendUser = async ()=>{
-      const friendUserRes = await fetch("http://localhost:5000/users/friendUser", {
+      const friendUserRes = await fetch("/users/friendUser", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
