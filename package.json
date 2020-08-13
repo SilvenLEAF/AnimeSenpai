@@ -2,6 +2,9 @@
   "name": "animesenpai",
   "version": "1.0.0",
   "description": "An app for all anime fans",
+  "engines": {
+    "node": "12.8.0"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
