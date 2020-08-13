@@ -41,7 +41,7 @@ function UserProfile(props) {
       
       { user ? (
         <>
-          <h1>Ahoy { user.displayName }!! </h1>
+          <h3>{ user.displayName } Profile</h3>
           <div>
             <span className="blue-text myUserNameLabel">User Name: </span>
             <span className="myUserName">{ user.displayName }</span> 
@@ -58,7 +58,7 @@ function UserProfile(props) {
           </div>          
 
           <div>
-            <h5>About Me</h5>
+            <h5 className="red-text">About Me</h5>
             <p>
               { user.about }
             </p>
