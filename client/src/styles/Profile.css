@@ -1,0 +1,13 @@
+.myProfileContainer h5 {
+  margin: 50px 0px 0px 0px;  
+}
+
+.myProfileContainer p {
+  margin: 0px 0px 20px 0px;  
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.myProfileButtons {
+  margin: 0px 0px 50px 0px;  
+}

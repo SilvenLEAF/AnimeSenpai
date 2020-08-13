@@ -4,6 +4,8 @@
   "description": "An app for all anime fans",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

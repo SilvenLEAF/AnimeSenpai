@@ -5,8 +5,8 @@ function SignedOutLinks() {
   return (
     <>
       <li><NavLink to="/">Home</NavLink></li>
-      <li><NavLink to="/">Log In</NavLink></li>
-      <li><NavLink to="/">Sign Up</NavLink></li>
+      <li><NavLink to="/login">Log In</NavLink></li>
+      <li><NavLink to="/signup">Sign Up</NavLink></li>
       <li><NavLink to="/">About Us</NavLink></li>
     </>
   )

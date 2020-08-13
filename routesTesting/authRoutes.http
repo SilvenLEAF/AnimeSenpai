@@ -5,10 +5,10 @@ POST http://localhost:5000/signup HTTP/1.1
 Content-Type: application/json
 
 { 
-  "email": "user@gmail.com",
-  "password": "password",
-  "passwordCheck": "password",
-  "displayName": "User"
+  "email": "anime@gmail.com",
+  "password": "ffffff",
+  "passwordCheck": "ffffff",
+  "displayName": "Otaku"
 }
 
 #######################################
@@ -18,8 +18,8 @@ POST http://localhost:5000/login HTTP/1.1
 Content-Type: application/json
 
 { 
-  "email": "user@gmail.com",
-  "password": "password"
+  "email": "anime@gmail.com",
+  "password": "ssssss"
 }
 
 #######################################
@@ -27,11 +27,5 @@ Content-Type: application/json
 #######################################
 POST http://localhost:5000/verifyToken HTTP/1.1
 Content-Type: application/json
-x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjJiYzU4OGU5MDZkMTAwNGNmYTY1MiIsImlhdCI6MTU5NjI0Mzc4NX0.o18Xl57qV8uhBnnypE5G3x38nY7inr7Q-ya69mwVkzQ
-
-#######################################
-#---------Get Loggedin User-----------#
-#######################################
-GET http://localhost:5000/loggedInUser HTTP/1.1
-x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjJiYzU4OGU5MDZkMTAwNGNmYTY1MiIsImlhdCI6MTU5NjI0Mzc4NX0.o18Xl57qV8uhBnnypE5G3x38nY7inr7Q-ya69mwVkzQ
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMzNjMzNmZmQ3NWU4MDAwOGVmYmM0ZSIsImlhdCI6MTU5NzIyNzg4M30.5kpXtUJT382dHKRNFdsnKvaD57YTJpwMsASMTTrKAM8
 

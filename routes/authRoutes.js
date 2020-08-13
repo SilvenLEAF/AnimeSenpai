@@ -58,7 +58,7 @@ router.post('/signup', async (req, res, next)=>{
 
 
   } catch (err) {
-    res.status(500).json({ msg: `Server crashed!`})
+    next(err, req, res)
   }
 })
 
@@ -107,7 +107,7 @@ router.post('/login', async (req, res, next)=>{
     })
 
   } catch (err) {
-    res.status(500).json({ msg: `Server crashed!`})
+    next(err, req, res)
   }
 })
 
@@ -122,7 +122,7 @@ router.post('/login', async (req, res, next)=>{
 ------------------------------------------------ */
 router.post('/verifyToken', async (req, res, next) =>{
   try {
-    const token = req.header('x-auth-token');
+    const token = req.header('x-auth-token');    
 
     // if there is no token
     if(!token)
@@ -143,7 +143,7 @@ router.post('/verifyToken', async (req, res, next) =>{
     // ----------------------default
     return res.json(true);
   } catch (err) {
-    res.status(500).json({ error: err.message })
+    next(err, req, res);
   }
 })
 

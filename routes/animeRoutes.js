@@ -20,7 +20,7 @@ router.post('/search', async (req, res, next)=>{
 
   res.json(searchResult)
   } catch (err) {
-    res.status(500).json({ error: err.message })
+    next(err, req, res)
   }
 })
 
@@ -35,7 +35,7 @@ router.post('/info', async (req, res, next) => {
     const animeInfo = await malScraper.getInfoFromName(animeName)
     res.json(animeInfo)
   } catch (err) {
-    res.status(500).json({ error: err.message })
+    next(err, req, res)
   }
 })
 
@@ -53,7 +53,7 @@ router.post('/season', async (req, res, next)=>{
         
     res.json(seasonAnime)
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    next(err, req, res)
   }
 })
 

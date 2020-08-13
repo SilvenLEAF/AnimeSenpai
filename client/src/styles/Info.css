@@ -1,0 +1,165 @@
+.myInfoPageHeadCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a00;
+
+  margin-top: 20px;
+}
+
+.mySynopsis > p {
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder{
+  display: inline-block;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  margin: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder > #myAnimeInfoPageAnimeTitle {
+  font-weight: 500;
+  margin: 0;
+}
+
+
+/* ------------------------------
+.    media queries for TITLE
+------------------------------- */
+@media screen and (max-width: 450px){  
+  .myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder > #myAnimeInfoPageAnimeTitle {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 450px){  
+  .myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder > #myAnimeInfoPageAnimeTitle {
+    font-size: 32px;
+  }
+}
+
+
+@media screen and (min-width: 600px){  
+  .myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder > #myAnimeInfoPageAnimeTitle {
+    font-size: 41px;
+  }
+}
+
+
+@media screen and (min-width: 700px){  
+  .myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder > #myAnimeInfoPageAnimeTitle {
+    font-size: 50px;
+  }
+}
+
+
+@media screen and (min-width: 800px){  
+  .myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder > #myAnimeInfoPageAnimeTitle {
+    font-size: 59px;
+  }
+}
+
+
+.myInfoPageHeadCard .myInfoPageAnimeImageHolder {
+  display: inline-block;
+  width: 40%;
+  /* height: 100%; */
+
+  align-self: center;
+  justify-self: center;
+}
+
+
+.myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder > p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){  
+  .myInfoPageHeadCard .myInfoPageAnimeImageHolder {
+    width: 30%;   
+  }
+
+  .myInfoPageHeadCard .myInfoPageShortAnimeInfoHolder{    
+    width: 70%;   
+  }
+}
+
+
+
+
+/* --------------------------------------
+.               charactersHolder
+-------------------------------------- */
+.charactersHolder{
+  display: flex;
+  flex-flow: row;
+  overflow: auto;
+}
+
+.charactersHolder > .character {
+  display: inline-block;
+  margin: 0px 0px 0px 20px;  
+}
+
+.charactersHolder > .character > img { 
+  display: block;
+  height: 225px;
+  position: relative;
+}
+
+.charactersHolder > .character > img::after { 
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  min-width: 100px;
+  min-height: 225px;
+  background-color: darkcyan;
+  background: url('/images/dragon.jpg') center/cover;
+  content: "";
+}
+
+.charactersHolder > .character > h5, .charactersHolder > .character > h6 {  
+  margin: 10px;
+  margin-top: 0;
+}
+
+
+.myMainInfoItem > p {
+  width: 70%;
+  display: inline-block;
+  margin: 0;
+}
+
+.mymyMainInfoItemLabel {
+  margin: 0;
+  padding-right: 10px;
+  width: 30%;
+  text-align: right;
+  display: inline-block;
+  font-size: 120%;
+  color: blue;
+  font-weight: 550;
+}
+
+
+#myMainInfoHolder{
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 20px;  
+}
+

@@ -3,15 +3,17 @@ import M from 'materialize-css';
 import React, { useEffect, useContext } from 'react';
 import SignedOutLinks from './SignedOutLinks';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../contexts/AuthContext';
+import AuthContext from '../../contexts/AuthContext';
+import SignedInLinks from './SignedInLinks';
 
 function Navbar() {
-  const { userData, setUserData } = useContext(AuthContext);
   useEffect(()=>{
-    M.AutoInit();  
+    M.AutoInit();
   })
 
-  const link = <SignedOutLinks/>
+  const { userData, setUserData } = useContext(AuthContext);  
+  
+  const link = userData.user ? <SignedInLinks/> : <SignedOutLinks/>;
   return (
     <nav className="nav-wrapper">
       <div className="container">
