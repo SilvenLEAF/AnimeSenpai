@@ -12,4 +12,9 @@ You can check out for any airing, aired, not-yet-premiered or seasonal anime/ mo
 
 
 ### **Hosted On**
-***Heroku*** *as AlvenLEAF@gmail.com.*
+***Heroku*** *as AlvenLEAF@gmail.com.*  
+
+
+
+<img src="/AnimeSenpai(1).png" />
+<img src="/AnimeSenpai(2).png" />
