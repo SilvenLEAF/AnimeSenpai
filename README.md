@@ -8,7 +8,7 @@ You can check out for any airing, aired, not-yet-premiered or seasonal anime/ mo
 
 
 ## **Technologies Used:**
-*MERN Stack, NodeJS, Express, MongoDB, Mongoose, React, Contexts and Hooks, Materialize, SASS, bcryptjs, JWT, mal-scraper, git, cli, chrome-dev-tools*    
+*MERN Stack, NodeJS, Express, MongoDB, Mongoose, React, Contexts and Hooks, Materialize, SASS, bcryptjs, JWT, mal-scraper, git, CLI, Chrome-Dev-Tools*    
 
 
 ### **Hosted On**
