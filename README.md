@@ -16,5 +16,5 @@ You can check out for any airing, aired, not-yet-premiered or seasonal anime/ mo
 
 
 
-<img src="/AnimeSenpai(1).png" />
-<img src="/AnimeSenpai(2).png" />
+<img src="/AnimeSenpai Home.png" />
+<img src="/AnimeSenpai Search.png" />
