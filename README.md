@@ -8,7 +8,7 @@ You can check out for any airing, aired, not-yet-premiered or seasonal anime/ mo
 ## **Technologies Used:**
 **Stack:** *MERN Stack*
 
-**BackEND:** *NodeJS, Express, bcryptjs, JWT, mal-scraper* 
+**BackEND:** *NodeJS, Express, bcryptjs, JWT, mal-scraper,  REST Api* 
 
 **Database:** *MongoDB (with Mongoose)*
 
