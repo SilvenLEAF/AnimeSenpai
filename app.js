@@ -29,7 +29,7 @@ app.use(require('./routes/authRoutes'))
 app.use('/users', require('./routes/userRoutes'));
 app.use('/anime', require('./routes/animeRoutes'));
 
-/* The "catchall" handler: for any request
+/* The "catchall" handler for any request
 that doesn't match one above, send back
 React's index.html file. */
 app.get('*', (req, res) =>{
