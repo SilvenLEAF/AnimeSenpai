@@ -3,7 +3,8 @@
 }
 
 .myProfileContainer p {
-  margin: 0px 0px 20px 0px;  
+  margin: 0px;  
+  margin-bottom: 20px;  
   text-indent: 50px;
   text-align: justify;
 }
