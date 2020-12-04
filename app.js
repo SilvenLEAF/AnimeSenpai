@@ -5,16 +5,15 @@ const path = require('path');
 
 
 
-// firing express app
+// ------------------firing express app
 const app = express();
 app.use(express.json());
-// Serve static files from the React App
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 
 
 /*  ----------------------------------
-.            configuration 
+.              config
 ---------------------------------- */
 require('./config/mongoDBconfig');
 
